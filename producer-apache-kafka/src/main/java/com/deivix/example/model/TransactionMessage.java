@@ -14,11 +14,11 @@ public class TransactionMessage {
     private Double amount;
     private Status status;
 
+    public enum Event {
+        WITHDRAW, DEPOSIT
+    }
     public enum Status {
         SUBMITED, STARTED, PENDING, FINISHED, TERMINATED
     }
 
-    public enum Event {
-        WITHDRAW, DEPOSIT
-    }
 }

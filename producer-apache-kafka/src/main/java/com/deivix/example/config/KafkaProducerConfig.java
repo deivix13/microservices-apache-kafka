@@ -50,8 +50,7 @@ public class KafkaProducerConfig {
     }
 
     // Creates a KafkaTemplate bean that can be injected and used to send messages.
-    // It uses the ProducerFactory defined above to obtain producers with the correct
-    // configuration (broker address, key/value serializers).
+    // It uses the ProducerFactory defined above to obtain producers with the correct // configuration (broker address, key/value serializers).
     // KafkaTemplate handles sending messages, serializing them, and managing the producer lifecycle internally.
     @Bean
     KafkaTemplate<@NonNull UUID, @NonNull TransactionMessage> kafkaTemplate() {
