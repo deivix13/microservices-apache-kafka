@@ -17,7 +17,7 @@ public class KafkaConsumerService {
     @KafkaListener(topics = {"transaction-cool-topic"}, groupId = "AA-DEMO")
     public void consumer(TransactionMessage transactionMessage) {
         // Log the received transaction for demo purposes
-        log.info("Transaction received with the ID: " + transactionMessage.getTransactionID() +
-                " status: " + transactionMessage.getStatus());
+        log.info("Transaction received with the ID: {} status: {}",
+                transactionMessage.getTransactionID(), transactionMessage.getStatus());
     }
 }
