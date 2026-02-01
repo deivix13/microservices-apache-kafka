@@ -8,6 +8,11 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaConfig {
 
+    /**
+     * Define the Kafka topic used in the demo.
+     * - 2 partitions allow parallel consumption.
+     * - 1 replica is enough for local development.
+     */
     @Bean
     public NewTopic transactionTopic() {
         return TopicBuilder.name("transaction-cool-topic")
@@ -16,3 +21,4 @@ public class KafkaConfig {
                 .build();
     }
 }
+
