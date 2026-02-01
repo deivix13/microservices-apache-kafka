@@ -5,8 +5,8 @@ spring:
   kafka:
     producer:
       bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.UUIDSerializer;
-      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer;
+      key-serializer: org.apache.kafka.common.serialization.UUIDSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
 
 server:
   port: 8083
