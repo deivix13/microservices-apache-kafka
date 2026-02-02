@@ -12,9 +12,9 @@ Functional demo with Spring Boot and Apache Kafka
 
 ## Todo
 
-- [ ] Use KRaft instead of Zookeeper 
+- [x] Use KRaft instead of Zookeeper 
+- [x] Add UI
 - [ ] Add Retry + DLT
-- [ ] Add UI
 - [ ] Run the proejct via mvn commands
 ---
 
