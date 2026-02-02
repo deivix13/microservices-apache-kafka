@@ -48,6 +48,8 @@ From the project root:
    ```bash
    docker compose up -d
    ```
+> Note: Kafka UI is available on: `localhost:8080`
+   
 2. **Build and run**:
    ```
    Run Main from the modules:
