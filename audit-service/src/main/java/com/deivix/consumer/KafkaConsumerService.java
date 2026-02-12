@@ -19,6 +19,6 @@ public class KafkaConsumerService {
     public void consumer(@Payload TransactionCreatedEventDTO transactionCreated) {
         // Log the received transaction for demo purposes
         log.info("Transaction received with the ID: {}",
-                transactionCreated.getTransactionId());
+                transactionCreated.transactionId());
     }
 }
