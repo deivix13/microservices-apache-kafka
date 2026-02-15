@@ -1,7 +1,5 @@
 package com.deivix.config;
 
-import com.deivix.dto.TransactionCreatedEventDTO;
-import com.deivix.event.CustomKafkaEvent;
 import lombok.NonNull;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Value;
